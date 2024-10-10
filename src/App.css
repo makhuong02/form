@@ -1,38 +1,86 @@
 .App {
-  text-align: center;
+	padding-bottom: 30px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h2 {
+	cursor: default;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header {
+	display: flex;
+	position: relative;
+	top: 0;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 20px;
+	background-color: #fff;
+	border-bottom: 0px solid #333;
+	box-shadow: 0 4px 10px rgba(82, 81, 81, 0.25);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
 }
 
-.App-link {
-  color: #61dafb;
+label {
+	position: relative;
+	top: 25px;
+	left: 10px;
+	color: #c3c3c3;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+form p {
+	color: crimson;
+}
+
+button[type="submit"] {
+	width: 100px;
+	height: 40px;
+	color: white;
+	background-color: #2970ff;
+	border: 0px;
+	border-radius: 10px;
+}
+
+button[type="submit"]:hover {
+	background-color: blue;
+	cursor: pointer;
+}
+
+input,
+select {
+	height: 50px;
+	line-height: 50px;
+	border: 1px solid #c3c3c3;
+	border-radius: 10px;
+	padding: 20px 10px 0px 10px;
+	box-sizing: content-box;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+select {
+	background-image: linear-gradient(45deg, transparent 50%, gray 50%),
+		linear-gradient(135deg, gray 50%, transparent 50%);
+	background-position: calc(100% - 20px) calc(1em + 20px),
+		calc(100% - 15px) calc(1em + 20px);
+	background-size: 5px 5px, 5px 5px, 1px 1.5em;
+	background-repeat: no-repeat;
+}
+
+.form-group {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+}
+
+.back-link {
+	color: #333;
+	text-decoration: none;
+	font-size: 16px;
 }
